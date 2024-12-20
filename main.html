@@ -9,29 +9,48 @@
 
 <body>
 	<div class="container mt-3">
-  <h3>Form Validation</h3>
-  <p>Try to submit the form.</p>
+	<h2>Internship form</h2>
     
   <form action="/action_page.php" class="was-validated">
-    <div class="mb-3 mt-3">
-      <label for="uname" class="form-label">Username:</label>
-      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
-      <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Please fill out this field.</div>
+    <div class="row mb-3 mt-3">
+		<div class="col-sm-4">
+			<label for="first-name-input" class="form-label">First Name</label>
+		    <input type="text" class="form-control" id="first-name-input" placeholder="Enter First Name" name="first-name-input" required>
+		</div>
+		<div class="col-sm-4">
+			<label for="last-name-input" class="form-label">Last Name</label>
+		    <input type="text" class="form-control" id="last-name-input" placeholder="Enter Last Name" name="last-name-input" required>
+		</div>
+		<div class="col-sm-4">
+			<label for="email-input" class="form-label">Email Address</label>
+		    <input type="email" class="form-control" id="email-input" placeholder="xyz@abc.com" name="email-input" required>
+		</div>
     </div>
-    <div class="mb-3">
-      <label for="pwd" class="form-label">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-      <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Please fill out this field.</div>
+    <div class="row mb-3">
+		<div class="col-sm-6">
+			<label for="college-input" class="form-label">College</label>
+		    <input type="text" class="form-control" id="college-input" placeholder="College" name="college-input" required>
+		</div>
+	    <div class="col-sm-3">
+			<label for="graduction-year-input" class="form-label">Graduction Year</label>
+		       <select class="form-select mt-3" id="graduction-year-input" value="Choose...">
+			     <option>Choose...</option>
+				 <option>2020</option>
+			     <option>2021</option>
+			     <option>2022</option>
+			     <option>2023</option>
+			   </select>
+		</div>
+		<div class="col-sm-3">
+			<label for="roll-no-input" class="form-label">Roll No</label>
+		    <input type="text" class="form-control" id="roll-no-input" name="roll-no-input" required>
+		</div>
     </div>
     <div class="form-check mb-3">
-      <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
-      <label class="form-check-label" for="myCheck">I agree on blabla.</label>
-      <div class="valid-feedback">Valid.</div>
-      <div class="invalid-feedback">Check this checkbox to continue.</div>
+      <input class="form-check-input" type="checkbox" id="conditions-checkbox"  name="remember" required>
+      <label class="form-check-label" for="">Agree to terms and conditions</label>
     </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Submit Form</button>
   </form>
 </div>
 
