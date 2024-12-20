@@ -16,24 +16,28 @@
 		<div class="col-sm-4">
 			<label for="first-name-input" class="form-label">First Name</label>
 		    <input type="text" class="form-control" id="first-name-input" placeholder="Enter First Name" name="first-name-input" required>
+			<div class="invalid-feedback">Please fill out this field.</div>
 		</div>
 		<div class="col-sm-4">
 			<label for="last-name-input" class="form-label">Last Name</label>
 		    <input type="text" class="form-control" id="last-name-input" placeholder="Enter Last Name" name="last-name-input" required>
+			<div class="invalid-feedback">Please fill out this field.</div>
 		</div>
 		<div class="col-sm-4">
 			<label for="email-input" class="form-label">Email Address</label>
 		    <input type="email" class="form-control" id="email-input" placeholder="xyz@abc.com" name="email-input" required>
+			<div class="invalid-feedback">Please fill out this field.</div>
 		</div>
     </div>
     <div class="row mb-3">
 		<div class="col-sm-6">
 			<label for="college-input" class="form-label">College</label>
 		    <input type="text" class="form-control" id="college-input" placeholder="College" name="college-input" required>
+			<div class="invalid-feedback">Please fill out this field.</div>
 		</div>
 	    <div class="col-sm-3">
 			<label for="grad-year-select" class="form-label">Graduction Year</label>
-		       <select class="form-select mt-3" id="grad-year-select">
+		       <select class="form-select mt-3" id="grad-year-select" required>
 			     <option>Choose...</option>
 				 <option>2020</option>
 			     <option>2021</option>
@@ -43,13 +47,15 @@
 		</div>
 		<div class="col-sm-3">
 			<label for="roll-no-input" class="form-label">Roll No</label>
-		    <input type="text" class="form-control" id="roll-no-input" name="roll-no-input" required>
+		    <input type="number" class="form-control" id="roll-no-input" name="roll-no-input" required>
+			<div class="invalid-feedback">Please fill out this field.</div>
 		</div>
     </div>
     <div class="form-check mb-3">
       <input class="form-check-input" type="checkbox" id="conditions-checkbox"  name="remember" required>
       <label class="form-check-label" for="conditions-checkbox">Agree to terms and conditions</label>
-    </div>
+	    <div class="invalid-feedback">Check this checkbox to continue.</div>
+	</div>
   <button type="submit" class="btn btn-primary">Submit Form</button>
   </form>
 </div>
